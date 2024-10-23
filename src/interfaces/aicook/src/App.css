@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* General body styles for night mode */
+body {
+  background-color: #121212;  /* Dark background for night mode */
+  color: #ffffff;  /* White text for contrast */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Input styles */
+.input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  margin: 20px 0;
+  background-color: #333333;  /* Darker input background */
+  color: #ffffff;  /* White text inside the input */
+}
+
+/* Button styles */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;  /* Space between buttons */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1DB954;  /* Green button color */
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;  /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: #1aa34a;  /* Darker green on hover */
+}
+
+/* Recipe container */
+.recipe {
+  background-color: #333333;  /* Dark background for recipe cards */
+  color: #ffffff;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 50%;
+  text-align: left;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  /* Shadow effect for recipe cards */
+}
+
+.recipe h2 {
+  color: #1DB954;  /* Green title for recipe names */
+}
+
+/* Logo styles */
+.logo-container {
+  margin: 20px 0;
+}
+
+.logo {
+  width: 150px;  /* Size of the logo */
+}
+
+/* Hide the "No recipes found" message if nothing has been searched or created */
+p {
+  margin: 20px 0;
+}
