@@ -2,6 +2,8 @@
 
 AICook is an intelligent recipe assistant that allows users to find recipes based on the ingredients they have available, as well as create new recipes tailored to their needs. The project leverages advanced machine learning models and vector databases to provide personalized recipe suggestions. Additionally, the project is designed to help food companies implement new language models into their recipe collections, enabling them to enhance their services.
 
+![Recipe Recommendation Example](https://github.com/LuisHRF/AICook-Intelligent-Recipe-Assistant/blob/main/gif_examples/recommend_recipe.gif)
+
 ---
 
 ## Table of Contents
@@ -51,6 +53,8 @@ AICook is a recipe recommendation and creation service that helps users find rec
 - **Advanced Recipe Matching**: Uses cosine similarity to find the best recipe matches by comparing user ingredients with a large dataset of recipes stored as vector embeddings.
 
 - **Efficient Search Using Pinecone**: AICook uses the Pinecone vector database for fast and efficient recipe retrieval.
+
+![Recipe Creation Example](https://github.com/LuisHRF/AICook-Intelligent-Recipe-Assistant/blob/main/gif_examples/create_recipe.gif)
 
 ---
 
