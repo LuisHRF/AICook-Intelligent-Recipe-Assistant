@@ -19,7 +19,7 @@ def recommend():
 
     best_recipe = find_most_similar_recipe(user_ingredients)
     if best_recipe:
-        return jsonify([best_recipe]), 200  # Asegúrate de retornar un array
+        return jsonify([best_recipe]), 200  
     else:
         return jsonify([]), 404 
 

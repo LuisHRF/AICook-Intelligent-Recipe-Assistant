@@ -65,9 +65,9 @@ async def update_metadata_in_pinecone_async(index, recipes, batch_size=100, name
             # Extract and format ingredients
             ingredients = row["RecipeIngredientParts"]
             if isinstance(ingredients, np.ndarray):
-                ingredients = ingredients.tolist()  # Convert to list if it's an ndarray
+                ingredients = ingredients.tolist()  
             if isinstance(ingredients, list):
-                ingredients = ", ".join(ingredients)  # Convert list to comma-separated string
+                ingredients = ", ".join(ingredients) 
 
             # Extract instructions
             instructions = row.get("RecipeInstructions", "")
@@ -75,14 +75,14 @@ async def update_metadata_in_pinecone_async(index, recipes, batch_size=100, name
             # Prepare metadata update (keeping existing name, ingredients, total_time, and adding instructions)
             metadata = {
                 "name": row["Name"],
-                "ingredients": ingredients,  # Ensure it's a string
-                "instructions": instructions,  # Add the instructions to the metadata
-                "total_time": row.get("TotalTimeMinutes", 0)  # Handle missing total_time
+                "ingredients": ingredients,  
+                "instructions": instructions,  
+                "total_time": row.get("TotalTimeMinutes", 0)  
             }
 
             upserts.append({
                 "id": str(row['RecipeId']),
-                "values": ingredient_vector,  # Use the new ingredient vector
+                "values": ingredient_vector,  
                 "metadata": metadata
             })
 
