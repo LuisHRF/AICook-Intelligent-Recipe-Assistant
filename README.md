@@ -71,12 +71,9 @@ AICook-Intelligent-Recipe-Assistant/
 │   ├── app.py              # Flask backend script
 │   ├── recommend_recipes.py # Recipe recommendation logic
 │   ├── create_recipes.py    # Recipe creation logic
-│   ├── helpers.py           # Helper functions and utilities
-│
-├── frontend/               # React frontend for user interface
-│   ├── public/             # Static files (HTML, icons)
-│   ├── src/                # React components and logic
-│   └── package.json        # React dependencies
+│   ├── aicook/             
+│       ├── src/
+│           ├── frontend/   # React frontend for user interface
 │
 ├── data/                   # Directory to store recipe datasets (handled externally)
 │   └── recipes.parquet      # Recipe data (external storage: S3, Google Drive, etc.)
